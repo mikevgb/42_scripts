@@ -1,5 +1,8 @@
 #!/bin/bash
-
+!!!NOT WORKING!!!
+!!!NOT WORKING!!!
+!!!NOT WORKING!!!
+!!!NOT WORKING!!!
 rm -rf /goinfre/${USER}/Homebrew
 rm -rf /goinfre/${USER}/.brew
 mv $HOME/Library/Caches/Homebrew /goinfre/${USER}/Hombrew

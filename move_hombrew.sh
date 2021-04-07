@@ -1,11 +1,9 @@
 #!/bin/bash
-!!!NOT WORKING!!!
-!!!NOT WORKING!!!
-!!!NOT WORKING!!!
-!!!NOT WORKING!!!
-rm -rf /goinfre/${USER}/Homebrew
-rm -rf /goinfre/${USER}/.brew
-mv $HOME/Library/Caches/Homebrew /goinfre/${USER}/Hombrew
-mv $HOME/.brew /goinfre/${USER}/.brew
-ln -s /goinfre/${USER}/Homebrew $HOME/Library/Caches/Homebrew
-ln -s /goinfre/${USER}/.brew $HOME/.brew
+!!!not working!!!
+brew update && brew upgrade && brew cu && brew cleanup; brew doctor
+
+mkdir -p /sgoinfre/${USER}/Library
+
+cp -r $HOME/Library/Caches/Homebrew /sgoinfre/students/${USER}/Library/Caches/Homebrew
+rm -rf $HOME/Library/Caches/Homebrew
+ln -s /sgoinfre/students/${USER}/Library/Caches/Homebrew $HOME/Library/Caches/Homebrew
